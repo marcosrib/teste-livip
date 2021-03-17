@@ -12,7 +12,8 @@ import defaultProps from './defaultProps';
 const EventsWithCategoryTitle = ({ classes, category, events, variant }) => {
   const title = {
     variant: 'h3',
-    message: flow(toLower, startCase)(category),
+    message: category,
+    //message: flow(toLower, startCase)(category),
   };
 
   return (

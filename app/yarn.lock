@@ -1120,28 +1120,20 @@
   dependencies:
     emojis-list "^3.0.0"
 
-"@livipdev/config@^1.0.1":
+"@livipdev/config@../design-system/packages/config/dist":
   version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@livipdev/config/1.0.1/96be60155f43db3509f53d202659cc6678cd8b20d47f58b205686abd187bdcfd#3197c8803d137b6a79c958564042ec320a64708e"
-  integrity sha512-n7h4ui7SF9JC+OsAsGo2vqSBcEGTpSL/q6AbgMmA/q2zsY/pm8GqkEjYQeSMq5g3NHsfXOHAOz5GJKCJVGjxUw==
 
-"@livipdev/containers@^1.0.11":
-  version "1.0.11"
-  resolved "https://npm.pkg.github.com/download/@livipdev/containers/1.0.11/be560ebc0e6751496b01cd4d98ef922b4652414ff8542d7457fb0f74ede9e10c#5b35f92ac429028bd923dcdb4f4879645fdf9dcf"
-  integrity sha512-WPdmtDdSFwcQ4Rrxu7c0O39x5yVsQyehXFfG/AbVIzz+HSt9DZlbXjlsO7QvOlWAMW0lnFg03mFMd5cjbFyQbg==
-
-"@livipdev/core@../../design-system/packages/core/dist":
+"@livipdev/containers@../design-system/packages/containers/dist":
   version "1.0.11"
 
-"@livipdev/icons@^1.0.0":
+"@livipdev/core@../design-system/packages/core/dist":
+  version "1.1.0"
+
+"@livipdev/icons@../design-system/packages/icons/dist":
   version "1.0.0"
-  resolved "https://npm.pkg.github.com/download/@livipdev/icons/1.0.0/f8a0844afd0f9c798815750b08d78f13255ac58ec8ed614bf3eb3c80aebecd5f#9cae5be4a9d57f81392515663090a32505a98ff7"
-  integrity sha512-VDc/J7uWa9FRBfbnKe2vrro0d4Xu21I1IISyw16f301r2IDXHDVOPxDSCgZc8kqWxGRkygHsrDdzG9u+8mdPMw==
 
-"@livipdev/tokens@^1.0.11":
+"@livipdev/tokens@../design-system/packages/tokens/dist":
   version "1.0.11"
-  resolved "https://npm.pkg.github.com/download/@livipdev/tokens/1.0.11/00d504a4c09558d71f7de52198f02b8045304116a092bad3fbe71039107997f1#648816693a453178b0b2c656f482ed27f09b57f1"
-  integrity sha512-NP7RT/1ZuArfXxBaOHDmM6w4MiABJbvJ5QQ+OYTgAW33eGK0BPAR/J+VQjudrVArVaO8aBrpFxXfVvhCyX3N1A==
 
 "@material-ui/core@^4.9.5":
   version "4.11.0"

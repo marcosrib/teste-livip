@@ -12,8 +12,12 @@ const cache = createIntlCache();
 const supportedLanguages = ['pt-BR'];
 
 const getLocale = async ctx => {
-  const accept = accepts(ctx.req);
-  const locale = accept.language(supportedLanguages) || process.env.DEFAULT_LOCALE;
+  //const accept = accepts(ctx.req);
+  const locale = 'pt-BR';
+  
+  //const locale = accept.language(supportedLanguages) || process.env.DEFAULT_LOCALE;
+  
+  
 
   return locale;
 };
