@@ -1,7 +1,7 @@
-{
+/*{
   "build": {
     "env": {
       "NPM_RC": "@pwa-travel-npmrc"
     }
   }
-}
+}*/
