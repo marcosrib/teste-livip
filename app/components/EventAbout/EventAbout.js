@@ -30,7 +30,7 @@ const EventAbout = ({ event, messages, classes }) => (
     </Grid>
     <Box component="div" bgcolor="grey.background">
       <Grid container>
-        <Box component={Grid} item lg={6} py={10} px={15}>
+        <Box component={Grid} item lg={6} py={10} px={6}>
           <Typography variant="h2" gutterBottom>
             {event.about.title}
           </Typography>

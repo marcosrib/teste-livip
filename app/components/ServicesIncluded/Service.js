@@ -8,8 +8,13 @@ import Typography from '@livipdev/core/Typography';
 const Service = ({ classes, description, icon, title }) => {
   const srcSet = `/icons/${icon}.png, /icons/${icon}@2x.png 2x, /icons/${icon}@3x.png 3x`;
 
+
+  //SEÇÃO DE ÍCONES EM SERVIÇOS
   return (
+    
     <Grid item xs={12} sm={6} md={4}>
+  
+
       <Box
         px={3}
         mb={10}

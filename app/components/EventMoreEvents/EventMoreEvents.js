@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import Carousel from '@livipdev/core/Carousel';
@@ -7,12 +7,38 @@ import ProjectCard from '@livipdev/core/ProjectCard';
 import { SCREEN_SIZES } from '@livipdev/core/styles/theme/constants';
 import Box from '@livipdev/core/Box';
 import Typography from '@livipdev/core/Typography';
+import {  useTheme } from '@material-ui/styles';
 
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Section from '../Section';
 
 const EventMoreEvents = ({ classes, event, messages }) => {
+
   const [page, setPage] = useState(0);
-  console.log(event)
+  const [isSize, setSize] = useState(0);
+  const [isWidth, setWidth] = useState(0);
+  const matchesSix = useMediaQuery('(max-width:800px)');
+  const matches = useMediaQuery('(min-width:1200px)');
+  
+ 
+
+  console.log(matches);
+
+  useEffect(() => {
+    if(matches) {
+      setSize(3)
+    }
+   else if(matchesSix) {
+      setSize(0.85)
+      setWidth(1)
+    } else {
+      setSize(2)
+      setWidth(3)
+    }
+   
+  },[matches,matchesSix])
+ 
+
   return (
     <Section bgcolor="grey.background" textAlign="center" gutterY={15}>
       <Box pb={1}>
@@ -27,15 +53,17 @@ const EventMoreEvents = ({ classes, event, messages }) => {
         <Carousel
           value={page}
           onChange={setPage}
-          slidesPerPage={3}
+          slidesPerPage={isWidth}
           gutterX={5}
           responsive
+       
         >
           {
             event.other.events.map(event => (
-              <ProjectCard
+              <ProjectCard  height="140"
+        
                 key={event.id}
-                parentColumns={3}
+                parentColumns={isSize}
                 gutterX={3}
                 {...event}
               />

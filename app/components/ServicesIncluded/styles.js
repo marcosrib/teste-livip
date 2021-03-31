@@ -1,3 +1,4 @@
+//Experiência completa
 export default function () {
   return {
     image: {
@@ -14,7 +15,7 @@ export default function () {
       paddingBottom: '4rem',
 
       '& p': {
-        width: '50%',
+        width: '100%',
         margin: '0 auto',
         fontSize: '1rem',
         paddingTop: 16,

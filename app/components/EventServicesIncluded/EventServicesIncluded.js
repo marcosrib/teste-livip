@@ -18,10 +18,10 @@ const EventServicesIncluded = () => {
   const toggleDialog = (setFunction, show) => () => setFunction(!show);
 
   return (
-    <Box p={15}>
+    <Box p={1} paddingBottom={8} >
       <ServicesIncluded />
       <Container>
-        <Grid container spacing={4} justify="center">
+        <Grid container spacing={1} justify="center">
           <Grid item>
             <Button
               color="primary"
@@ -68,7 +68,7 @@ const EventServicesIncluded = () => {
         open={showQuotationDialog}
         onClose={toggleDialog(setShowQuotationDialog, showQuotationDialog)}
       />
-      <TellYourCompanyDialog
+     <TellYourCompanyDialog
         open={showTellYourCompanyDialog}
         onClose={toggleDialog(setShowTellYourCompanyDialog, showTellYourCompanyDialog)}
       />

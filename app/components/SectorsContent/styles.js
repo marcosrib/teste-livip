@@ -41,7 +41,7 @@ export default function (theme) {
         // marginRight: 0.2rem,
       },
     },
-
+   
     carousel: {
       height: '100%',
 

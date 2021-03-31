@@ -51,7 +51,7 @@ const SectorsContent = ({ classes, features, gallery, logo, logo_event, map, nam
           <img
             src={logo_event}
             alt={`${name}`}
-            style={{ maxHeight: "160px", maxWidth: "380px", transform: "translate(-50%, 50%)", position: "absolute", bottom: "50%", margin: "0 auto"}}
+            style={{ maxHeight: "160px", maxWidth: "350px", transform: "translate(-50%, 50%)", position: "absolute", bottom: "50%", margin: "0 auto"}}
           />
         </Box>
         <Box width="100%" display="contents" margin="auto 0">

@@ -13,6 +13,7 @@ const Section = ({
   const paddingY = noGutter ? 0 : gutterY;
   const paddingX = noGutter ? 0 : gutterX;
 
+  
   return (
     <Box {...props} component={component} py={paddingY} px={paddingX}>
       {

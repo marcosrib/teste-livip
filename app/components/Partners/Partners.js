@@ -13,6 +13,15 @@ const Partners = () => (
         slidesPerPage={5}
         center
         infinite
+        responsive
+        breakpoints={{
+          599: {
+            slidesPerPage: 1,
+          },
+          960: {
+            slidesPerPage: 3,
+          },
+        }}
       >
         <Box>
           <img src="/img/partners-intel.jpg" role="presentation" alt="Parceiro Intel" />

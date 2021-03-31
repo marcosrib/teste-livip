@@ -13,6 +13,7 @@ import Section from '../Section';
 
 import { buildBestAttractions } from './builders';
 
+
 const EventAttractions = ({ classes, event, messages }) => {
   const [cardsPage, setCardsPage] = useState(0);
   const bestAttractions = buildBestAttractions(event.attractions.best);
@@ -20,7 +21,7 @@ const EventAttractions = ({ classes, event, messages }) => {
   return(
     <Section noGutter noContainer>
       <Grid container justify="center">
-        <Grid item xs={12} md={10} lg={8}>
+        <Grid item xs={11} md={10} lg={8}>
           <Section component="div" textAlign="center">
             <Box pb={3}>
               <Typography variant="h2" message={messages.attractions} gutterBottom />
@@ -33,6 +34,7 @@ const EventAttractions = ({ classes, event, messages }) => {
       </Grid>
       <Carousel
         infinite
+        autoPlay={4000}
         responsive
         slidesPerPage={3}
         breakpoints={{
@@ -56,28 +58,41 @@ const EventAttractions = ({ classes, event, messages }) => {
         }
       </Carousel>
 
-      <Section textAlign="center">
+      <Section textAlign="center" >
         <Typography variant="h2" message={{ ...messages.nearby, values: { city: event.city } }} />
       </Section>
 
-      <Carousel
+      <Carousel 
         value={cardsPage}
         onChange={setCardsPage}
         slidesPerPage={3}
         gutterX={5}
         responsive
+        breakpoints={{
+          599: {
+            slidesPerPage: 1,
+          },
+          960: {
+            slidesPerPage: 3,
+          },
+        }}
+        
       >
         {
           bestAttractions.map(content => (
-            <SimpleCard
+            <SimpleCard   
               key={content.id}
-              content={content}
+              content={content} 
               gutterX={1}
               italicDescription
+                 
+              
             />
+            
           ))
         }
       </Carousel>
+      
       <CarouselDots
         value={Math.floor(cardsPage/3)}
         onChange={page => setCardsPage(page * 3)}
@@ -85,6 +100,7 @@ const EventAttractions = ({ classes, event, messages }) => {
         customClass={classes.dots}
         inverse
       />
+      
     </Section>
   );
 };

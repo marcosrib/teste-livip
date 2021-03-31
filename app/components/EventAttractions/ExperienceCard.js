@@ -1,6 +1,7 @@
 import styled from '@livipdev/core/styles/styled';
 import Box from '@livipdev/core/Box';
 
+//experiências e atrações
 const ExperienceCard = styled(Box)(({ background, theme }) => ({
   alignItems: 'flex-end',
   backgroundImage: `linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url(${background})`,
@@ -21,5 +22,6 @@ const ExperienceCard = styled(Box)(({ background, theme }) => ({
     height: '66vw',
   },
 }));
+
 
 export default ExperienceCard;

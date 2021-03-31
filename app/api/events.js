@@ -145,7 +145,7 @@ export const response = {
         {
           id: 'miami-open-2021',
           title: 'Miami Open',
-          subtitle: '',
+          subtitle: 'Miami',
           categories: ['internacional'],
           date: '22/03 a 04/04/21',
           img: '/img/capa-miami-open-2021-md.png',
@@ -335,7 +335,7 @@ export const response = {
         {
           id: 'miami-open-2021',
           title: 'Miami Open',
-          subtitle: '',
+          subtitle: 'Miami',
           categories: ['internacional'],
           date: '22/03 a 04/04/21',
           img: '/img/capa-miami-open-2021-md.png',
@@ -716,7 +716,7 @@ export const response = {
         {
           id: 'miami-open-2021',
           title: 'Miami Open',
-          subtitle: '',
+          subtitle: 'Miami',
           categories: ['internacional'],
           date: '22/03 a 04/04/21',
           img: '/img/capa-miami-open-2021-md.png',
@@ -1009,7 +1009,7 @@ export const response = {
         {
           id: 'miami-open-2021',
           title: 'Miami Open',
-          subtitle: '',
+          subtitle: 'Miami',
           categories: ['internacional'],
           date: '22/03 a 04/04/21',
           img: '/img/capa-miami-open-2021-md.png',
@@ -1206,7 +1206,7 @@ export const response = {
         {
           id: 'miami-open-2021',
           title: 'Miami Open',
-          subtitle: '',
+          subtitle: 'Miami',
           categories: ['internacional'],
           date: '22/03 a 04/04/21',
           img: '/img/capa-miami-open-2021-md.png',
@@ -1533,7 +1533,7 @@ export const response = {
         {
           id: 'miami-open-2021',
           title: 'Miami Open',
-          subtitle: '',
+          subtitle: 'Miami',
           categories: ['internacional'],
           date: '22/03 a 04/04/21',
           img: '/img/capa-miami-open-2021-md.png',
@@ -1730,7 +1730,7 @@ export const response = {
         {
           id: 'miami-open-2021',
           title: 'Miami Open',
-          subtitle: '',
+          subtitle: 'Miami',
           categories: ['internacional'],
           date: '22/03 a 04/04/21',
           img: '/img/capa-miami-open-2021-md.png',
