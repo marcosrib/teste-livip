@@ -31,17 +31,18 @@ const Sectors = ({ sectors, classes }) => {
 
   return (
     <>
-      <Box py={1} className={classes.tabsBox}>
+      <Box py={1} className={classes.tabsBox} fontSize="large">
         <Tabs
           value={value}
           onChange={handleChange}
           className={classes.tabs}
           indicatorColor="primary"
           textColor="primary"
-          // variant="scrollable"
-          scrollButtons="auto"
+          variant="scrollable"
+          scrollButtons="on"
+          fontSizeLarge={true}
           aria-label="scrollable auto tabs example"
-          centered
+          centered={true}
         >
           {tabs}
         </Tabs>

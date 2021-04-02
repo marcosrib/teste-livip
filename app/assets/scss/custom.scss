@@ -9,6 +9,7 @@
     @for $i from 1 through 9999 {
         .ContainerWithBackground-bg-#{$i} {
             background-size: cover;
+            background-repeat: no-repeat;
         }
       }  
     
