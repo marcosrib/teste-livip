@@ -31,8 +31,8 @@ const Sectors = ({ sectors, classes }) => {
 
   return (
     <>
-      <Box py={1} className={classes.tabsBox} fontSize="large">
-        <Tabs
+      <Box py={1} className={classes.tabsBox}>
+        <Tabs 
           value={value}
           onChange={handleChange}
           className={classes.tabs}
@@ -40,7 +40,6 @@ const Sectors = ({ sectors, classes }) => {
           textColor="primary"
           variant="scrollable"
           scrollButtons="on"
-          fontSizeLarge={true}
           aria-label="scrollable auto tabs example"
           centered={true}
         >

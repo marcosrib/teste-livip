@@ -7,7 +7,6 @@ const styles = theme => ({
     borderTopColor: theme.palette.grey[300],
   },
 
-  
 
   tabs: {
     '& button': {
@@ -58,10 +57,15 @@ const styles = theme => ({
       display: 'none',      
     },
 
+    "& .MuiSvgIcon-root": { 
+      //fontSize: "2em" 
+      fontSize: '2.2rem'
+    },
     
-    
+        
     margin: 'auto',
     width: '50%',
+    
     
     [theme.breakpoints.down('md')]: {
       width: '100%',
@@ -71,6 +75,7 @@ const styles = theme => ({
     
     
   },
+  
   
 });
 
