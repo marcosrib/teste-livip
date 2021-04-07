@@ -20,7 +20,7 @@ const EventMoreEvents = ({ classes, event, messages }) => {
   const matchesSix = useMediaQuery('(max-width:800px)');
   const matches = useMediaQuery('(min-width:1200px)');
   
- 
+ //Detalhe evento
 
   console.log(matches);
 
