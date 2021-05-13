@@ -8,6 +8,7 @@ import Dialog from '@livipdev/core/Dialog';
 
 import messages from './messages';
 import TellYourCompanyDialogTextFields from '../TellYourCompanyDialogTextFields';
+import api from '../../apiServices';
 
 const TellYourCompanyDialog = ({ onSubmit, ...props }) => {
   const intl = useIntl();
@@ -20,9 +21,18 @@ const TellYourCompanyDialog = ({ onSubmit, ...props }) => {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    onSubmit(quote);
+    console.log(quote);
+    const { name, email, phone, company,deptRole } = quote;
+    const res = await api.post('api/sendmail', {
+      name: name,
+      email,
+      phone,
+      company: company || null,
+      deptRole,
+     
+    })
   };
 
   return (

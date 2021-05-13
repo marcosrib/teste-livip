@@ -12,7 +12,7 @@ const Layout = ({ children, variant, ...props }) => {
   const [showShareDialog, setShowShareDialog] = React.useState(false);
 
   const toggleDialog = (setFunction, show) => () => setFunction(!show);
-
+ 
   useEffect(() => {
 
       window.addEventListener("click", function(event) {

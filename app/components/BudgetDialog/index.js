@@ -10,7 +10,7 @@ import messages from './messages';
 import BudgetDialogTextFields from '../BudgetDialogTextFields';
 import BudgetDialogCheckboxes from '../BudgetDialogCheckboxes';
 import BudgetDialogMultiline from '../BudgetDialogMultiline';
-
+import api from '../../apiServices';
 const CHECKBOXES = 'services';
 
 const BudgetDialog = ({ onSubmit, ...props }) => {
@@ -28,9 +28,17 @@ const BudgetDialog = ({ onSubmit, ...props }) => {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    onSubmit(quote);
+    const { name, email, phone, company,quantity, comments } = quote;
+    const res = await api.post('api/sendmail', {
+      name: name,
+      email,
+      phone,
+      company: company || null,
+      quantity,
+      comments
+    })
   };
 
   return (

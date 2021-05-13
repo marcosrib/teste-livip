@@ -14,8 +14,17 @@ const EventServicesIncluded = () => {
   const [showQuotationDialog, setShowQuotationDialog] = React.useState(false);
   const [showTellYourCompanyDialog, setShowTellYourCompanyDialog] = React.useState(false);
   const [showShareDialog, setShowShareDialog] = React.useState(false);
-
+  const [servicePersonalized, setServicePersonalized] = React.useState(false);
   const toggleDialog = (setFunction, show) => () => setFunction(!show);
+
+  function requestPersonalizedService(setFunction, show) {
+    setShowQuotationDialog(!showQuotationDialog)
+    setServicePersonalized(true);
+  }
+  function personalizedService(setFunction, show) {
+    setShowQuotationDialog(!showQuotationDialog)
+    setServicePersonalized(false);
+  }
 
   return (
     <Box p={1} paddingBottom={8} >
@@ -26,7 +35,7 @@ const EventServicesIncluded = () => {
             <Button
               color="primary"
               variant="outlined"
-              onClick={toggleDialog(setShowQuotationDialog, showQuotationDialog)}
+              onClick={() => personalizedService()}
             >
               Solicitar orçamento
             </Button>
@@ -36,7 +45,7 @@ const EventServicesIncluded = () => {
             <Button
               color="primary"
               variant="outlined"
-              onClick={toggleDialog(setShowQuotationDialog, showQuotationDialog)}
+              onClick={() => requestPersonalizedService()}
             >
               Solicitar atendimento personalizado
             </Button>
@@ -65,6 +74,7 @@ const EventServicesIncluded = () => {
         </Grid>
       </Container>
       <BudgetDialog
+        isServicePersonalized={servicePersonalized}
         open={showQuotationDialog}
         onClose={toggleDialog(setShowQuotationDialog, showQuotationDialog)}
       />
